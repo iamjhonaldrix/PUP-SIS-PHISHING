@@ -2,7 +2,6 @@ from flask import Flask, render_template, request, redirect
 import time
 
 app = Flask(__name__)
-from flask_ngrok import run_with_ngrok
 @app.route('/', methods=['GET', 'POST'])
 def home():
     show_alert = False #until the user input his/her password hehe hacker
